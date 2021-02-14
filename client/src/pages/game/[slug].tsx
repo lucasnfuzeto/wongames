@@ -10,7 +10,7 @@ export default function SignIn(props: GameTemplateProps) {
 
 export async function getStaticPaths() {
   return {
-    paths: [{ params: { slug: 'little-nightmate' } }],
+    paths: [{ params: { slug: 'little-nightmares' } }],
     fallback: false
   }
 }

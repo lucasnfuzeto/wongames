@@ -5,6 +5,7 @@ import GameDetails, { GameDetailsProps } from 'components/GameDetails'
 import GameInfo, { GameInfoProps } from 'components/GameInfo'
 import { HighlightProps } from 'components/Highlight'
 import TextContent from 'components/TextContent'
+import { Divider } from 'components/Divider'
 import Base from 'templates/Base'
 
 import * as S from './styles'
@@ -48,6 +49,7 @@ const Game = ({
 
       <S.SectionGameDetails>
         <GameDetails {...details} />
+        <Divider />
       </S.SectionGameDetails>
 
       <Showcase
