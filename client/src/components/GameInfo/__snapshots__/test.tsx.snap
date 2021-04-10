@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GameInfo /> should render game informations 1`] = `
-.c7 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
 .c1 {
   color: #030517;
   position: relative;
@@ -65,6 +59,12 @@ exports[`<GameInfo /> should render game informations 1`] = `
   border-right-width: 2rem;
 }
 
+.c7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -89,6 +89,10 @@ exports[`<GameInfo /> should render game informations 1`] = `
   height: 5rem;
   font-size: 1.6rem;
   padding: 0.8rem 4.8rem;
+}
+
+.c6:focus {
+  outline: 1px dashed;
 }
 
 .c6:hover {
@@ -129,6 +133,10 @@ exports[`<GameInfo /> should render game informations 1`] = `
   padding: 0.8rem 4.8rem;
   background: none;
   color: #F231A5;
+}
+
+.c8:focus {
+  outline: 1px dashed;
 }
 
 .c8:hover {
@@ -275,6 +283,7 @@ exports[`<GameInfo /> should render game informations 1`] = `
     >
       <svg
         aria-hidden="true"
+        aria-label="Add to Wishlist"
         class="c7"
         fill="currentColor"
         focusable="false"
@@ -290,7 +299,7 @@ exports[`<GameInfo /> should render game informations 1`] = `
         />
       </svg>
       <span>
-        Wishlist
+        Add to Wishlist
       </span>
     </button>
   </div>

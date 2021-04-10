@@ -1,5 +1,5 @@
-import { fireEvent } from '@testing-library/react'
-import { screen, render } from 'utils/test-utils'
+import 'session.mock'
+import { render, screen } from 'utils/test-utils'
 import GameCard from '.'
 
 const props = {
@@ -60,22 +60,6 @@ describe('<GameCard />', () => {
     expect(screen.getByText('$15.00')).not.toHaveStyle({
       textDecoration: 'line-through'
     })
-  })
-
-  it('should render a filled favorite icon when favorite is true', () => {
-    render(<GameCard {...props} favorite />)
-
-    expect(screen.getByLabelText(/Remove from Wishlist/i)).toBeInTheDocument()
-  })
-
-  it('should call onFav method when favorite is clicked', () => {
-    const onFav = jest.fn()
-
-    render(<GameCard {...props} favorite onFav={onFav} />)
-
-    fireEvent.click(screen.getAllByRole('button')[0])
-
-    expect(onFav).toBeCalled()
   })
 
   it('should render Ribbon', () => {
