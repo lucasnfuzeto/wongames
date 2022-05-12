@@ -82,7 +82,7 @@ const GamesTemplate = ({ filterItems }: GamesTemplateProps) => {
                   {loading ? (
                     <S.ShowMoreLoading
                       src="/img/dots.svg"
-                      alt="Loading more games...."
+                      alt="Loading more games....."
                     />
                   ) : (
                     <S.ShowMoreButton role="button" onClick={handleShowMore}>
